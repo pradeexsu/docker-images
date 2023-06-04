@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file gdb-cpp --tag pradeexsu/gdb_debugger:$(date +%s)
+      run: docker build . --file gdb-cpp/Dockerfile --tag pradeexsu/gdb_debugger:$(date +%s)
